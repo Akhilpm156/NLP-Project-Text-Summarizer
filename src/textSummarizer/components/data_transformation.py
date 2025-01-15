@@ -25,5 +25,8 @@ class DataTransformation:
 
     def convert(self):
         dataset_samsum = load_from_disk(self.config.data_path)
+        # Select small training data 
+        dataset_samsum['train'] = dataset_samsum['train'].select(range(self.config.train_size))
+        print(dataset_samsum)
         dataset_samsum_pt = dataset_samsum.map(self.convert_examples_to_features, batched = True)
         dataset_samsum_pt.save_to_disk(os.path.join(self.config.root_dir,"samsum_dataset"))

@@ -1,5 +1,6 @@
 transformers
 transformers[sentencepiece]
+datasets
 sacrebleu 
 rouge_score 
 py7zr
@@ -7,11 +8,14 @@ pandas
 nltk
 tqdm
 PyYAML
+matplotlib
 torch
+accelerate
 notebook
 boto3
 mypy-boto3-s3
 python-box
 ensure
-datasets
+evaluate
+Jinja2==3.1.2
 -e .

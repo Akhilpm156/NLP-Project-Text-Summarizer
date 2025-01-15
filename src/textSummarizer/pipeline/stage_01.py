@@ -6,6 +6,7 @@ from textSummarizer.logging import logger
 class DataIngestionTrainingPipeline:
     def __init__(self):
         pass
+    
     def main():
         config = ConfigurationManager()
         data_ingestion_config = config.get_data_ingestion_config()
