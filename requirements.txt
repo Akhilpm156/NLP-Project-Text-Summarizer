@@ -17,5 +17,7 @@ mypy-boto3-s3
 python-box
 ensure
 evaluate
-Jinja2==3.1.2
+Jinja2
+fastapi
+uvicorn
 -e .

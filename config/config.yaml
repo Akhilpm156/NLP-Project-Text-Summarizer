@@ -15,7 +15,7 @@ data_validation:
 data_transformation:
   root_dir: artifacts/data_transformation
   data_path: artifacts/data_ingestion/samsum_dataset
-  train_size: 1000
+  train_size: 14732 # select number of train data
   tokenizer_name: google/pegasus-cnn_dailymail
 
 
